@@ -1,39 +1,359 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
   <PATCH>
-  <BOUNDS type="Window" width="9225" height="28005">
+  <BOUNDS type="Window" width="20235" height="17265">
   </BOUNDS>
-  <NODE id="169" nodename="Element (HTML)" systemname="Element (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="420" top="540" width="100" height="100">
+  <NODE id="22" nodename="LinearSpread (Spreads)" systemname="LinearSpread (Spreads)" componentmode="Hidden">
+  <BOUNDS type="Node" left="6420" top="1905" width="100" height="100">
   </BOUNDS>
-  <PIN pinname="Style In" visible="1">
+  <PIN pinname="Input" visible="1">
   </PIN>
-  <PIN pinname="Tag Name" visible="1" values="|a|">
+  <PIN pinname="Width" visible="1" values="|2|">
+  </PIN>
+  <PIN pinname="Alignment" visible="1">
+  </PIN>
+  <PIN pinname="Phase" visible="1">
+  </PIN>
+  <PIN pinname="Spread Count" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="25" nodename="Renderer (Canvas VVVVjs)" systemname="Renderer (Canvas VVVVjs)" componentmode="Hidden">
+  <BOUNDS type="Node" left="6750" top="7230" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Layers" visible="1">
+  </PIN>
+  <PIN pinname="Clear" visible="1">
+  </PIN>
+  <PIN pinname="Background Color" visible="1">
+  </PIN>
+  <PIN pinname="Backbuffer Width" visible="1">
+  </PIN>
+  <PIN pinname="Backbuffer Height" visible="1">
+  </PIN>
+  <PIN pinname="Parent Element" visible="1">
+  </PIN>
+  <PIN pinname="View" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="27" nodename="Quad (Canvas VVVVjs)" systemname="Quad (Canvas VVVVjs)" componentmode="Hidden">
+  <BOUNDS type="Node" left="6645" top="5175" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Transform" visible="1">
+  </PIN>
+  <PIN pinname="Clipping Layer" visible="1">
+  </PIN>
+  <PIN pinname="Texture" visible="1">
+  </PIN>
+  <PIN pinname="Color" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="34" nodename="Cross (2d)" systemname="Cross (2d)" componentmode="Hidden">
+  <BOUNDS type="Node" left="6480" top="3000" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="X In" visible="1">
+  </PIN>
+  <PIN pinname="Y In" visible="1">
+  </PIN>
+  <PIN pinname="Include Upper" visible="1">
+  </PIN>
+  <PIN pinname="Include Lower" visible="1">
+  </PIN>
+  <PIN pinname="Include Equal" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="35" nodename="Transform (Transform 2d)" systemname="Transform (Transform 2d)" componentmode="Hidden">
+  <BOUNDS type="Node" left="6570" top="4155" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Transform In" visible="1">
+  </PIN>
+  <PIN pinname="TranslateX" visible="1">
+  </PIN>
+  <PIN pinname="TranslateY" visible="1">
+  </PIN>
+  <PIN pinname="ScaleX" visible="1" values="|0.25|">
+  </PIN>
+  <PIN pinname="ScaleY" visible="1" values="|0.25|">
+  </PIN>
+  <PIN pinname="Rotate" visible="1">
+  </PIN>
+  <PIN pinname="CenterX" visible="1">
+  </PIN>
+  <PIN pinname="CenterY" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="42" nodename="SetSlice (Spreads)" systemname="SetSlice (Spreads)" componentmode="Hidden">
+  <BOUNDS type="Node" left="9720" top="3765" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Spread" visible="1">
+  </PIN>
+  <PIN pinname="Input" visible="1">
+  </PIN>
+  <PIN pinname="Index" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="43" nodename="HSV (Color Join)" systemname="HSV (Color Join)" componentmode="Hidden">
+  <BOUNDS type="Node" left="8580" top="4650" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Hue" visible="1">
+  </PIN>
+  <PIN pinname="Saturation" visible="1">
+  </PIN>
+  <PIN pinname="Value" visible="1">
+  </PIN>
+  <PIN pinname="Alpha" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="44" nodename="I (Spreads)" systemname="I (Spreads)" componentmode="Hidden">
+  <BOUNDS type="Node" left="9240" top="1890" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="[ From .." visible="1">
+  </PIN>
+  <PIN pinname=".. To [" visible="1">
+  </PIN>
+  <PIN pinname="Phase" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="45" nodename="Multiply (Value)" systemname="Multiply (Value)" componentmode="Hidden">
+  <BOUNDS type="Node" left="9420" top="2445" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Input 1" visible="1">
+  </PIN>
+  <PIN pinname="Input 2" visible="1" values="|0|">
+  </PIN>
+  <PIN pinname="Input Count" visible="0" values="|2|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="46" nodename="Add (Value)" systemname="Add (Value)" componentmode="Hidden">
+  <BOUNDS type="Node" left="10125" top="3045" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Input 1" visible="1">
+  </PIN>
+  <PIN pinname="Input 2" visible="1" values="|0.5|">
+  </PIN>
+  <PIN pinname="Input Count" visible="0" values="|2|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="47" nodename="GetElement (HTML)" systemname="GetElement (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="18870" top="525" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Selector" visible="1" values="|body|">
   </PIN>
   <PIN pinname="Parent" visible="1">
   </PIN>
-  <PIN pinname="Text" visible="1" values="|vvvv.js patch|">
-  </PIN>
-  <PIN pinname="Enabled" visible="1">
-  </PIN>
-  <PIN pinname="Attribute Names" visible="0" values="||">
+  <PIN pinname="Refresh" visible="1">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <NODE id="170" nodename="SetAttribute (HTML)" systemname="SetAttribute (HTML)" componentmode="Hidden">
-  <BOUNDS type="Node" left="645" top="1200" width="100" height="100">
+  <NODE id="48" nodename="ApplyStyle (HTML)" systemname="ApplyStyle (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="18255" top="1365" width="100" height="100">
   </BOUNDS>
+  <PIN pinname="Style" visible="1">
+  </PIN>
   <PIN pinname="Element" visible="1">
   </PIN>
-  <PIN pinname="Attribute Name" visible="1" values="|href|">
+  <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
-  <PIN pinname="Attribute Value" visible="1" values="|https://nahui-ocelotl.github.io/vvvv.js/#edit/patch.v4p|">
+  </NODE>
+  <NODE id="49" nodename="Style (HTML)" systemname="Style (HTML)" componentmode="Hidden">
+  <BOUNDS type="Node" left="17925" top="495" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Style In" visible="1">
   </PIN>
-  <PIN pinname="Attribute BinSize" visible="1">
+  <PIN pinname="Property Name" visible="1" values="|margin|">
+  </PIN>
+  <PIN pinname="Property Value" visible="1" values="|0|">
   </PIN>
   <PIN pinname="Descriptive Name" visible="0" values="||">
   </PIN>
   </NODE>
-  <LINK srcnodeid="169" srcpinname="Layers Out" dstnodeid="170" dstpinname="Element">
+  <NODE id="50" nodename="ScreenInfo (Windows)" systemname="ScreenInfo (Windows)" componentmode="Hidden">
+  <BOUNDS type="Node" left="7020" top="5775" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="51" nodename="AspectRatio (Transform)" systemname="AspectRatio (Transform)" componentmode="Hidden">
+  <BOUNDS type="Node" left="8025" top="6585" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Transform In" visible="1">
+  </PIN>
+  <PIN pinname="Aspect Width" visible="1">
+  </PIN>
+  <PIN pinname="Aspect Height" visible="1">
+  </PIN>
+  <PIN pinname="Uniform Scale" visible="1">
+  </PIN>
+  <PIN pinname="Alignment" visible="1" values="|FitIn|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="52" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)" componentmode="InABox">
+  <BOUNDS type="Box" left="7950" top="405" width="0" height="0">
+  </BOUNDS>
+  <PIN pinname="Y Input Value" visible="1" values="|8|">
+  </PIN>
+  <PIN pinname="Rows" visible="0" values="|1|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="53" nodename="Multiply (Value)" systemname="Multiply (Value)" componentmode="Hidden">
+  <BOUNDS type="Node" left="8745" top="1275" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Input 1" visible="1">
+  </PIN>
+  <PIN pinname="Input 2" visible="1">
+  </PIN>
+  <PIN pinname="Input Count" visible="0" values="|2|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="56" nodename="Transform (Transform 2d)" systemname="Transform (Transform 2d)" componentmode="Hidden">
+  <BOUNDS type="Node" left="4950" top="3045" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Transform In" visible="1">
+  </PIN>
+  <PIN pinname="TranslateX" visible="1">
+  </PIN>
+  <PIN pinname="TranslateY" visible="1" values="|0.5|">
+  </PIN>
+  <PIN pinname="ScaleX" visible="1" values="|0.5|">
+  </PIN>
+  <PIN pinname="ScaleY" visible="1" values="|0.5|">
+  </PIN>
+  <PIN pinname="Rotate" visible="1">
+  </PIN>
+  <PIN pinname="CenterX" visible="1">
+  </PIN>
+  <PIN pinname="CenterY" visible="1">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <NODE id="57" nodename="Cons (Spreads)" systemname="Cons (Spreads)" componentmode="Hidden">
+  <BOUNDS type="Node" left="11100" top="3000" width="100" height="100">
+  </BOUNDS>
+  <PIN pinname="Input 1" visible="1">
+  </PIN>
+  <PIN pinname="Input 2" visible="1" values="|1|">
+  </PIN>
+  <PIN pinname="Input 3" visible="1" values="|2|">
+  </PIN>
+  <PIN pinname="Input 4" visible="1" values="|3|">
+  </PIN>
+  <PIN pinname="Input 5" visible="1" values="|11|">
+  </PIN>
+  <PIN pinname="Input 6" visible="1" values="|12|">
+  </PIN>
+  <PIN pinname="Input 7" visible="1" values="|13|">
+  </PIN>
+  <PIN pinname="Input 8" visible="1" values="|14|">
+  </PIN>
+  <PIN pinname="Input 9" visible="1" values="|22|">
+  </PIN>
+  <PIN pinname="Input 10" visible="1" values="|30|">
+  </PIN>
+  <PIN pinname="Input 11" visible="1" values="|29|">
+  </PIN>
+  <PIN pinname="Input 12" visible="1" values="|28|">
+  </PIN>
+  <PIN pinname="Input 13" visible="1" values="|36|">
+  </PIN>
+  <PIN pinname="Input 14" visible="1" values="|44|">
+  </PIN>
+  <PIN pinname="Input 15" visible="1" values="|43|">
+  </PIN>
+  <PIN pinname="Input 16" visible="1" values="|42|">
+  </PIN>
+  <PIN pinname="Input 17" visible="1" values="|34|">
+  </PIN>
+  <PIN pinname="Input 18" visible="1" values="|26|">
+  </PIN>
+  <PIN pinname="Input 19" visible="1" values="|25|">
+  </PIN>
+  <PIN pinname="Input 20" visible="1" values="|24|">
+  </PIN>
+  <PIN pinname="Input 21" visible="1" values="|32|">
+  </PIN>
+  <PIN pinname="Input 22" visible="1" values="|40|">
+  </PIN>
+  <PIN pinname="Input 23" visible="1" values="|48|">
+  </PIN>
+  <PIN pinname="Input 24" visible="1" values="|56|">
+  </PIN>
+  <PIN pinname="Input Count" visible="0" values="|24|">
+  </PIN>
+  <PIN pinname="Descriptive Name" visible="0" values="||">
+  </PIN>
+  </NODE>
+  <LINK srcnodeid="27" srcpinname="Layer" dstnodeid="25" dstpinname="Layers">
+  </LINK>
+  <LINK srcnodeid="22" srcpinname="Output" dstnodeid="34" dstpinname="X In">
+  </LINK>
+  <LINK srcnodeid="22" srcpinname="Output" dstnodeid="34" dstpinname="Y In">
+  </LINK>
+  <LINK srcnodeid="34" srcpinname="X Out" dstnodeid="35" dstpinname="TranslateX">
+  </LINK>
+  <LINK srcnodeid="34" srcpinname="Y Out" dstnodeid="35" dstpinname="TranslateY">
+  </LINK>
+  <LINK srcnodeid="35" srcpinname="Transform Out" dstnodeid="27" dstpinname="Transform">
+  </LINK>
+  <LINK srcnodeid="42" srcpinname="Output" dstnodeid="43" dstpinname="Value">
+  </LINK>
+  <LINK srcnodeid="43" srcpinname="Output" dstnodeid="27" dstpinname="Color">
+  </LINK>
+  <LINK srcnodeid="44" srcpinname="Output" dstnodeid="45" dstpinname="Input 1">
+  </LINK>
+  <LINK srcnodeid="45" srcpinname="Output" dstnodeid="46" dstpinname="Input 1">
+  </LINK>
+  <LINK srcnodeid="46" srcpinname="Output" dstnodeid="42" dstpinname="Spread">
+  </LINK>
+  <LINK srcnodeid="47" srcpinname="Layers Out" dstnodeid="48" dstpinname="Element">
+  </LINK>
+  <LINK srcnodeid="49" srcpinname="Style Out" dstnodeid="48" dstpinname="Style">
+  </LINK>
+  <LINK srcnodeid="50" srcpinname="ResolutionXY" dstnodeid="25" dstpinname="Backbuffer Width">
+  </LINK>
+  <LINK srcnodeid="50" srcpinname="ResolutionXY" dstnodeid="51" dstpinname="Aspect Width">
+  </LINK>
+  <LINK srcnodeid="51" srcpinname="Transform Out" dstnodeid="25" dstpinname="View">
+  </LINK>
+  <LINK srcnodeid="52" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Spread Count">
+  </LINK>
+  <LINK srcnodeid="52" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Input 1">
+  </LINK>
+  <LINK srcnodeid="52" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Input 2">
+  </LINK>
+  <LINK srcnodeid="53" srcpinname="Output" dstnodeid="44" dstpinname=".. To [">
+  </LINK>
+  <LINK srcnodeid="50" srcpinname="Working AreaXY" dstnodeid="25" dstpinname="Backbuffer Height">
+  </LINK>
+  <LINK srcnodeid="50" srcpinname="ResolutionXY" dstnodeid="51" dstpinname="Aspect Height">
+  </LINK>
+  <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="35" dstpinname="Transform In">
+  </LINK>
+  <LINK srcnodeid="57" srcpinname="Output" dstnodeid="42" dstpinname="Index">
   </LINK>
   </PATCH>
